@@ -1,0 +1,84 @@
+.navbar {
+	color: #fff;
+	background-color: rgba(#000, 10%);
+}
+
+.navbar-nav {
+	position: relative;
+	margin-right: 60px;
+
+	&::before {
+		position: absolute;
+		right: -31px;
+		top: 12px;
+
+		width: 1px;
+		height: 18px;
+
+		background-color: #fff;
+
+		content: "";
+	}
+}
+
+@media(max-width:768px) {
+	.navbar-nav::before {
+		display: none;
+	}
+}
+
+.navbar__box-icon {
+	width: 36px;
+	height: 36px;
+
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: #03a9f4;
+	border-radius: 5px;
+}
+
+.nav-item {
+	color: inherit;
+}
+
+.nav-link:hover {
+	color: wheat;
+}
+
+.navbar__toggler {
+	width: 35px;
+	height: 35px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin: 0;
+
+	background-image: url("../img/burger.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border: 2px solid #03a9f4;
+	border-radius: 5px;
+}
+
+.navbar__search-box {
+	position: relative;
+
+	padding-top: 5px;
+
+	&:hover .navbar__search-input {
+		display: inline-block;
+	}
+}
+
+.navbar__search-input {
+	display: none;
+
+	&:focus {
+		display: block;
+	}
+}
+
+.navbar__search-submit {
+	color: #fff;
+}

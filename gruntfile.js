@@ -33,26 +33,26 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		/*
+				//POSTCSS
+				postcss: {
+					options: {
+						processors: [
+		              require('autoprefixer')({
+								browsers: ['last 2 versions']
 
-		//POSTCSS
-		postcss: {
-			options: {
-				processors: [
-              require('autoprefixer')({
-						browsers: ['last 2 versions']
+							}),
+							require('cssnano')({
+								preset: 'default',
+							})
+		            ]
+					},
+					dist: {
+						src: 'source/css/style.css',
+						dest: 'source/css/style-min.css',
+					}
 
-					}),
-					require('cssnano')({
-						preset: 'default',
-					})
-            ]
-			},
-			dist: {
-				src: 'source/css/style.css',
-				dest: 'source/css/style-min.css',
-			}
-
-		},
+				},*/
 
 		//UNCSS
 		uncss: {
@@ -151,6 +151,7 @@ module.exports = function (grunt) {
 
 	});
 	grunt.loadNpmTasks('grunt-juwain-posthtml');
+	grunt.loadNpmTasks('grunt-csso');
 	grunt.loadNpmTasks('grunt-cwebp');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-svgstore');

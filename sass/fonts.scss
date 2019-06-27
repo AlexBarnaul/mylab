@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "Hind";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Hind Regular"),
+		url("../fonts/Hindregular.woff2") format("woff2"),
+		url("../fonts/Hindregular.woff") format("woff"),
+		url("../fonts/Hindregular.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: "Hind SemiBold";
+	font-weight: 600;
+	font-style: normal;
+	src: local("Hind semibold"),
+		url("../fonts/Hindsemibold.woff2") format("woff2"),
+		url("../fonts/Hindsemibold.woff") format("woff"),
+		url("../fonts/Hindsemibold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Lora Bold";
+	font-weight: 700;
+	font-style: normal;
+	src: local("Lora Bold"),
+		url("../fonts/Lorabold.woff2") format("woff2"),
+		url("../fonts/Lorabold.woff") format("woff"),
+		url("../fonts/Lorabold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Lora Italic";
+	font-weight: 400;
+	font-style: italic;
+	src: local("Lora italic"),
+		url("../fonts/Loraitalic.woff2") format("woff2"),
+		url("../fonts/Loraitalic.woff") format("woff"),
+		url("../fonts/Loraitalic.ttf") format("truetype");
+}
