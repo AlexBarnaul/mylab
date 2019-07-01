@@ -1,12 +1,84 @@
 .main-page__main-header {
 	max-width: 1600px;
-	min-height: 800px;
+	height: 100vh;
 	margin: 0 auto;
 
 	color: white;
 
 	background-image: url("../img/header-bg.jpg");
 	background-position: left center;
-	background-size: 1600px 800px;
+	background-size: cover;
 	background-repeat: no-repeat;
+	background-color: #53524b;
+}
+
+.main-header__carousel-indicators-box {
+	position: absolute;
+	bottom: -130px;
+	left: 50%;
+	right: 50%;
+	margin-left: -35px;
+
+	width: 70px;
+	height: 10px;
+
+}
+
+ol .main-header__carousel-indicators {
+	width: 10px;
+	height: 10px;
+
+	background-color: #b6b6b6;
+
+	&.active {
+		background-color: #03a9f4;
+	}
+}
+
+.main-header__title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20%;
+	text-align: center;
+	padding: 0;
+
+	font-size: 24px;
+	font-weight: 400;
+	font-family: "Hind", Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 2.4px;
+	text-transform: uppercase;
+
+	& span {
+		font-family: "Hind SemiBold";
+		font-weight: 600;
+	}
+}
+
+.main-header__carousel-item {
+	margin-bottom: 50px;
+	min-height: 100px;
+}
+
+.main-header__carousel-title {
+	font-family: "Hind SemiBold";
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4.2px;
+	font-size: 42px;
+}
+
+.main-header__carousel-text {
+	margin: 0 auto;
+
+	text-align: center;
+	font-family: Hind;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: 0.45px;
+
+	opacity: 0.75;
 }
