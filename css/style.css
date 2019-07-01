@@ -9739,7 +9739,8 @@ a {
 
 .main-page__main-header {
   max-width: 1600px;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 250px;
   margin: 0 auto;
   color: white;
   background-image: url("../img/header-bg.jpg");
