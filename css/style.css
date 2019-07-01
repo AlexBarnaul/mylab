@@ -9679,6 +9679,16 @@ h3 {
   font-style: italic;
   src: local("Lora italic"), url("../fonts/Loraitalic.woff2") format("woff2"), url("../fonts/Loraitalic.woff") format("woff"), url("../fonts/Loraitalic.ttf") format("truetype");
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Hind", Arial, sans-serif;
+  font-size: 16px;
+}
+
 ul {
   display: block;
   list-style: none;
@@ -9713,15 +9723,93 @@ a {
   font: inherit;
 }
 
+.btn-primary {
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  width: 170px;
+  height: 50px;
+  font-family: "Hind SemiBold";
+  font-size: 14px;
+  line-height: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
 .main-page__main-header {
   max-width: 1600px;
-  min-height: 800px;
+  height: 100vh;
   margin: 0 auto;
   color: white;
   background-image: url("../img/header-bg.jpg");
   background-position: left center;
-  background-size: 1600px 800px;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-color: #53524b;
+}
+
+.main-header__carousel-indicators-box {
+  position: absolute;
+  bottom: -130px;
+  left: 50%;
+  right: 50%;
+  margin-left: -35px;
+  width: 70px;
+  height: 10px;
+}
+
+ol .main-header__carousel-indicators {
+  width: 10px;
+  height: 10px;
+  background-color: #b6b6b6;
+}
+ol .main-header__carousel-indicators.active {
+  background-color: #03a9f4;
+}
+
+.main-header__title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  text-align: center;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Hind", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+.main-header__title span {
+  font-family: "Hind SemiBold";
+  font-weight: 600;
+}
+
+.main-header__carousel-item {
+  margin-bottom: 50px;
+  min-height: 100px;
+}
+
+.main-header__carousel-title {
+  font-family: "Hind SemiBold";
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4.2px;
+  font-size: 42px;
+}
+
+.main-header__carousel-text {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.45px;
+  opacity: 0.75;
 }
 
 .navbar {
@@ -9732,6 +9820,12 @@ a {
 .navbar-nav {
   position: relative;
   margin-right: 60px;
+  font-family: "Hind SemiBold", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
 }
 .navbar-nav::before {
   position: absolute;
@@ -9751,6 +9845,8 @@ a {
 .navbar__box-icon {
   width: 36px;
   height: 36px;
+  padding-top: 2px;
+  line-height: 36px;
   text-align: center;
   vertical-align: middle;
   background-color: #03a9f4;
@@ -9789,13 +9885,96 @@ a {
 
 .navbar__search-input {
   display: none;
+  position: absolute;
+  left: -190px;
+  top: 0;
 }
 .navbar__search-input:focus {
   display: block;
 }
 
+@media (max-width: 767px) {
+  .navbar__search-input {
+    left: 38px;
+  }
+}
 .navbar__search-submit {
   color: #fff;
+}
+
+.main-content__features {
+  max-width: 1600px;
+}
+
+.features__list {
+  justify-content: center;
+}
+
+.features__item {
+  width: 400px;
+  height: 400px;
+  padding-top: 40px;
+  border: none;
+  background-color: #f7fcff;
+}
+.features__item:hover {
+  background-color: #f0fafe;
+}
+
+.features__item-body {
+  text-align: center;
+}
+
+.features__more {
+  color: #03a9f4;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: "Hind SemiBold";
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+.features__more:hover, .features__more:hover + .features__more-icon {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.features__more-icon {
+  font-size: 14px;
+  color: #03a9f4;
+}
+
+.card-title {
+  color: #212121;
+  font-family: "Hind SemiBold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 46px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.card-text {
+  color: #727272;
+  font-family: "Hind";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+}
+
+.features__icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: block;
+  padding-top: 4px;
+  font-size: 36px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 70px;
+  background-color: #03a9f4;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

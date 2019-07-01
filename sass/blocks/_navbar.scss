@@ -5,7 +5,15 @@
 
 .navbar-nav {
 	position: relative;
+
 	margin-right: 60px;
+
+	font-family: "Hind SemiBold", Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
 
 	&::before {
 		position: absolute;
@@ -30,7 +38,9 @@
 .navbar__box-icon {
 	width: 36px;
 	height: 36px;
+	padding-top: 2px;
 
+	line-height: 36px;
 	text-align: center;
 	vertical-align: middle;
 
@@ -73,9 +83,18 @@
 
 .navbar__search-input {
 	display: none;
+	position: absolute;
+	left: -190px;
+	top: 0;
 
 	&:focus {
 		display: block;
+	}
+}
+
+@media(max-width:767px) {
+	.navbar__search-input {
+		left: 38px;
 	}
 }
 
