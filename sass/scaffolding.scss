@@ -15,10 +15,31 @@ ul {
 	margin: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
 a {
 	text-decoration: none;
 	font: inherit;
 	color: inherit;
+}
+
+a:hover, a:active {
+	text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h6 {
+    padding: 0;
+    margin: 0;
 }
 
 .visually-hidden {
