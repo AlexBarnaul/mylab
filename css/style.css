@@ -10014,8 +10014,9 @@ ol .main-header__carousel-indicators.active {
 }
 
 .head__text {
+  margin: 0 auto;
   margin-bottom: 40px;
-  width: 771px;
+  max-width: 771px;
   color: #212121;
   font-family: "Hind";
   font-size: 16px;
@@ -10062,6 +10063,7 @@ ol .main-header__carousel-indicators.active {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .portfolio__gallery-item,
@@ -10074,6 +10076,15 @@ ol .main-header__carousel-indicators.active {
   width: auto;
 }
 
+/*
+
+@media(max-width:400px) {
+        .portfolio__gallery-item,
+    .portfolio__gallery-item-sliced {
+
+    }
+}
+*/
 @media (max-width: 1599px) {
   .portfolio__gallery {
     max-width: 800px;
@@ -10126,6 +10137,7 @@ ol .main-header__carousel-indicators.active {
   display: block;
   margin: 0 auto;
   width: 107px;
+  margin-bottom: 70px;
   font-family: "Hind SemiBold";
   font-size: 14px;
   font-weight: 400;
@@ -10138,6 +10150,77 @@ ol .main-header__carousel-indicators.active {
 }
 .portfolio__gallery-button i {
   margin-left: 10px;
+}
+
+.portfolio__footer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  background-image: url("../img/2-layers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #212121;
+}
+
+.portfolio__footer-text {
+  max-width: 926px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-family: "Hind";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+.main-content__news {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.news__list {
+  max-width: 1170px;
+  margin: 0 auto;
+  color: #03a9f4;
+  font-family: "Hind SemiBold";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.news__item {
+  margin-bottom: 60px;
+}
+.news__item time {
+  display: block;
+  color: #727272;
+  font-family: "Hind";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.news__item:hover .news__text {
+  color: #ff9800;
+}
+
+.news__text {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.main-content__team {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 80px;
+  background-color: #f0fafe;
 }
 
 /*# sourceMappingURL=style.css.map */
