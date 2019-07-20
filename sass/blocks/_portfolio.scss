@@ -1,0 +1,136 @@
+.main-content__portfolio {
+    max-width: 1600px;
+    padding: 0;
+}
+
+//navigatin
+.portfolio__nav {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    color: #03a9f4;
+    font-family: "Hind SemiBold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+
+.portfolio__nav-item:hover .portfolio__nav-link {
+    color: #ff9800;
+}
+
+.portfolio__nav-link {
+    padding: 0 18px;
+    display: block;
+
+    &--current {
+        border-bottom: 3px solid #03a9f4;
+        color: #000 !important;
+    }
+}
+
+//gallery
+.portfolio__gallery {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio__gallery-item,
+.portfolio__gallery-item-sliced {
+    position: relative;
+
+    width: 400px;
+
+    &--multiple {
+        width: auto;
+    }
+}
+
+@media(max-width:1599px) {
+    .portfolio__gallery {
+        max-width: 800px;
+    }
+}
+
+//gallery multiple
+.portfolio__gallery-multiple {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio__gallery-link {
+    position: relative;
+
+    display: block;
+}
+
+//overlayer
+.portfolio__gallery-overlayer {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    color: #fff;
+
+    background-color: rgba(#000, .75);
+}
+
+.portfolio__overlayer-link {
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    line-height: 56px;
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: #03a9f4;
+
+
+    &:hover {
+        background-color: #ff9800;
+    }
+
+    &:first-child {
+        margin-right: 20px;
+    }
+}
+
+.portfolio__gallery-item:hover .portfolio__gallery-overlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//button
+.portfolio__gallery-button {
+    display: block;
+    margin: 0 auto;
+    width: 107px;
+
+    font-family: "Hind SemiBold";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    white-space: nowrap;
+
+    background-color: transparent;
+    border: none;
+
+    & i {
+        margin-left: 10px;
+    }
+}
