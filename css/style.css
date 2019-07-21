@@ -10012,6 +10012,9 @@ ol .main-header__carousel-indicators.active {
   letter-spacing: 3.6px;
   font-family: "Hind SemiBold";
 }
+.head__title--customers {
+  color: #fff;
+}
 
 .head__text {
   margin: 0 auto;
@@ -10024,6 +10027,9 @@ ol .main-header__carousel-indicators.active {
   line-height: 30px;
   letter-spacing: 0.4px;
   opacity: 0.75;
+}
+.head__text--customers {
+  color: #fff;
 }
 
 .main-content__portfolio {
@@ -10336,6 +10342,7 @@ ol .main-header__carousel-indicators.active {
 }
 
 .statistics__list {
+  padding-top: 50px;
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -10434,6 +10441,30 @@ ol .main-header__carousel-indicators.active {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.4px;
+}
+
+.main-content__customers {
+  max-width: 1600px;
+  padding-top: 80px;
+  margin: 0 auto;
+  background-color: #212121;
+}
+
+.customers__list {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.customers__link {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.customers__item {
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 /*

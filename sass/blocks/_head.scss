@@ -12,6 +12,10 @@
     text-transform: uppercase;
     letter-spacing: 3.6px;
     font-family: "Hind SemiBold";
+
+    &--customers {
+        color: #fff;
+    }
 }
 
 .head__text {
@@ -27,4 +31,9 @@
     letter-spacing: 0.4px;
 
     opacity: 0.75;
+
+    &--customers {
+        color: #fff;
+
+    }
 }
