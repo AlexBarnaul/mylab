@@ -1,0 +1,53 @@
+.main-content__statistics {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 80px 0;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #ff9800;
+}
+
+.statistics__list {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    color: #ffffff;
+    font-family: "Hind SemiBold";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.statistics__item {
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.statistics__icon-box {
+    float: left;
+    padding-top: 5px;
+    padding-left: 3px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ff9800;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.statistics__text {
+    font-size: 14px;
+    margin-left: 97px;
+}
+
+.statistics__amount {
+    margin-left: 25px;
+}

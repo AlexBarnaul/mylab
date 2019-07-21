@@ -1,0 +1,39 @@
+.main-content__skill {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.skill__list {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.skill__item {
+    margin-bottom: 25px;
+}
+
+.skill__title-box {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #212121;
+    font-family: "Hind SemiBold";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+
+.skill__bar {
+    height: 25px;
+    background-color: #b3e5fc;
+}
+
+.skill__bar-inner {
+    width: 95%;
+    height: 100%;
+    background-color: #03a9f4;
+}
