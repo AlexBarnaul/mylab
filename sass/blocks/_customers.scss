@@ -1,8 +1,21 @@
 .main-content__customers {
     max-width: 1600px;
     padding-top: 80px;
+    padding-bottom: 86px;
     margin: 0 auto;
-    background-color: #212121;
+    background-image: url("../img/2-layers2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    background-attachment: fixed;
+}
+
+@media(min-resolution:1.5dppx),
+(min-resolution:144dpi) {
+    .main-content__customers {
+        background-image: url("../img/2-layers2@2x.jpg");
+
+    }
 }
 
 .customers__list {
