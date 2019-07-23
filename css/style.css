@@ -10536,12 +10536,17 @@ ol .main-header__carousel-indicators.active {
   max-width: 1600px;
   min-height: 400px;
   margin: 0 auto;
-  background-image: url("../img/layer_40.jpg");
+  background-image: url("../img/Layer_40.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .footer__map {
+    background-image: url("../img/Layer_40@2x.jpg");
+  }
+}
 .footer__address-title {
   color: #212121;
   font-family: "Hind SemiBold";
@@ -10557,7 +10562,8 @@ ol .main-header__carousel-indicators.active {
   top: 10%;
   left: 13%;
   padding: 35px;
-  width: 370px;
+  max-width: 370px;
+  min-width: 320px;
   min-height: 280px;
   color: #212121;
   font-family: "Hind";
@@ -10567,6 +10573,12 @@ ol .main-header__carousel-indicators.active {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+@media (max-width: 500px) {
+  .footer__address-container {
+    left: 50%;
+    margin-left: calc(-370px/2);
+  }
+}
 .footer__address-text {
   margin-bottom: 20px;
 }
